@@ -12,7 +12,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rambla:400,400italic,700|Inconsolata:400" />
 
 	{{ghost_head}}
 </head>
@@ -23,7 +22,9 @@
 		<div class="inner">
 			{{#if @blog.logo}}
 				<a class="js-ajax-link js-show-index" id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
-				<h1 class="blog-title"><a class="js-ajax-link js-show-index" id="blog-logo-title" href="{{@blog.url}}">{{@blog.title}}</a></h1>
+        {{#if @blog.description}}
+        <span class="blog-description">{{@blog.description}}</span>
+				<!-- <h1 class="blog-title"><a class="js-ajax-link js-show-index" id="blog-logo-title" href="{{@blog.url}}">{{@blog.title}}</a></h1> -->
 			{{else}}
 				<h1 class="blog-title"><a class="js-ajax-link js-show-index" id="blog-title" href="{{@blog.url}}">{{@blog.title}}</a></h1>
 			{{/if}}
@@ -42,8 +43,6 @@
 	<footer id="site-footer">
 		<div class="inner">
 			<a class="subscribe" href="{{@blog.url}}/rss/"><i class="fa fa-rss"></i></a>
-			{{#if @blog.description}}
-				<span class="blog-description">{{@blog.description}}</span>
 			{{/if}}
 			<section class="poweredby">&copy SuchShibe.com</section>
 		</div>

@@ -42,7 +42,7 @@ html {
 }
 
 body {
-	font-family: 'Rambla', sans-serif;
+	font-family: 'Comic Sans MS', cursive, sans-serif;
 	font-size: 2em;
 	line-height: 1.6em;
 	
@@ -164,7 +164,7 @@ mark {
 
 code, tt {
     padding: 2px 6px;
-    font-family: 'Inconsolata', monospace, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 0.8em;
     white-space: pre;
     border: 1px solid #292e33;
@@ -181,7 +181,7 @@ pre {
     border: 1px solid #292e33;
     width: 100%;
     padding: 16px;
-    font-family: 'Inconsolata', monospace, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 0.9em;
     white-space: pre;
     overflow: auto;
